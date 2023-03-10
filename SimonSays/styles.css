@@ -1,0 +1,81 @@
+body {
+    display: inline-grid;
+    place-items: center;
+    width: 100%;
+}
+
+.simon {
+    position: relative;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.buttonContainer {
+    display: inline-grid;
+    grid-gap: 5px;
+    grid-template-columns: auto auto;
+}
+
+.btn {
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.btn:active,
+.active {
+    filter: brightness(-125%);
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+#startButton {
+    margin: auto;
+    font-weight: 500;
+    width: 130px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    background-color:rgb(49, 35, 196);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#startButton:disabled {
+    background-color: white;
+}
+
+.title {
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.winner {
+    animation: spin 1s ease-in-out;
+}
+
+@keyframes spin { 
+    100% { transform:rotate(180deg) } }
